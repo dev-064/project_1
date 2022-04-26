@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM website project</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+<style>
+    /* CSS reset */
+    body {
+        font-family: 'Orelega One', cursive;
+        margin: 0px;
+        padding: 0px;
+        background-image: url('img/bg.jpg');
+        color: white;
+        background-position-x: 230px;
+        background-position-y: 0px;
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        display: inline-block;
+    }
+
+    .left img {
+        width: 90px;
+        height: 50px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 45%;
+        margin: 15px auto;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 33px;
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 10px;
+    }
+
+    .navbar li a:hover {
+        color: grey;
+        text-decoration: underline;
+    }
+
+    .btn {
+        font-family: 'Orelega One', cursive;
+        margin: 0px 4px;
+        background-color: black;
+        color: white;
+        padding: 4px 12px;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(53, 50, 49);
+    }
+
+    .container {
+        margin: 104px 48px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 15 px;
+    }
+
+    .form_group input {
+        text-align: center;
+        display: block;
+        width: 89%;
+        padding: 4px;
+        margin: 15px auto;
+        font-size: 22px;
+        border-radius: 25px;
+        font-family: 'Orelega One', cursive;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 81px;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header>
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/fitness-gym-logo-with-athletic-man-training-black-vector-20315628.jpg" alt="">
+            <div>fitness_freaks</div>
+        </div>
+        <!-- mid for the navigation pannel -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">FITNESS CALCULATOR</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+        <!-- right for the other buttons -->
+        <div class="right">
+            <button class="btn">Call us</button><button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Fill your details</h1>
+        <form action="noaction.php"></form>
+        <div class="form_group">
+            <input type="text" name="" placeholder="Enter your name">
+        </div>
+        <div class="form_group">
+            <input type="text" name="" placeholder="Enter your age">
+        </div>
+        <div class="form_group">
+            <input type="text" name="" placeholder="Enter your weight">
+        </div>
+        <div class="form_group">
+            <input type="text" name="" placeholder="Enter your gender">
+        </div>
+        <button class="btn">SUBMIT</button>
+    </div>
+</body>
+
+</html>
